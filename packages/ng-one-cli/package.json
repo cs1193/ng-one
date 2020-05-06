@@ -1,0 +1,25 @@
+{
+  "name": "ng-one-cli",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Chandresh Rajkumar Manonmani <cs1193@gmail.com>",
+  "homepage": "https://github.com/cs1193/ng-one#readme",
+  "license": "UNLICENSED",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs1193/ng-one.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/cs1193/ng-one/issues"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@cs1193/ng-one",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "lerna-changelog": "^1.0.1",
+    "lerna-dependency-graph": "^1.0.2"
+  }
+}
