@@ -1,5 +1,5 @@
 {
-  "name": "ng-one-cli",
+  "name": "ng-one-buildtools",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Chandresh Rajkumar Manonmani <cs1193@gmail.com>",
@@ -21,12 +21,5 @@
   },
   "bugs": {
     "url": "https://github.com/cs1193/ng-one/issues"
-  },
-  "dependencies": {
-    "chalk": "^4.0.0",
-    "lodash": "^4.17.15",
-    "log-symbols": "^4.0.0",
-    "update-notifier": "^4.1.0",
-    "yargs": "^15.3.1"
   }
 }
