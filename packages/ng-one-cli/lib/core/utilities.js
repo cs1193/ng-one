@@ -1,4 +1,7 @@
 const spawn = require('cross-spawn');
+const semver = require('semver');
+
+const SUPPORTED_VERSION = '8.11.1';
 
 const executeCommand = (command, args = [], options = {}) => {
   const child = spawn(command, args, options);
@@ -26,6 +29,11 @@ const executeCommand = (command, args = [], options = {}) => {
   });
 }
 
+const isSupportedVersion = () => {
+  return semver.satisfies(process.version, `>=${SUPPORTED_VERSION}`);
+};
+
 module.exports = {
-  executeCommand
+  executeCommand,
+  isSupportedVersion
 };
