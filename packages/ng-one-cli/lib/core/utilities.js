@@ -21,7 +21,7 @@ const executeCommand = (command, args = [], options = {}) => {
         return;
       }
 
-      (options.stdio && options.stdio !== 'inherit') ? resolve(outputData) : resolve();
+      (options.stdio && options.stdio !== 'inherit') ? resolve(outputData) : resolve();a
     });
   });
 }

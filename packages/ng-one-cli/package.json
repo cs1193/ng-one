@@ -31,6 +31,7 @@
     "cross-spawn": "^7.0.2",
     "lodash": "^4.17.15",
     "log-symbols": "^4.0.0",
+    "simple-git": "^2.5.0",
     "update-notifier": "^4.1.0",
     "yargs": "^15.3.1"
   }
