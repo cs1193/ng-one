@@ -28,6 +28,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "chalk": "^4.0.0",
+    "cross-spawn": "^7.0.2",
     "lodash": "^4.17.15",
     "log-symbols": "^4.0.0",
     "update-notifier": "^4.1.0",
