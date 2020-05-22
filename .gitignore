@@ -1,0 +1,35 @@
+# dist
+dist
+
+# nodejs
+node_modules
+npm-debug.log
+.npm/
+
+# lerna
+lerna-debug.log
+
+# macos
+*DS_Store*
+
+# env
+.env
+
+# tmp
+tmp
+.tmp
+
+# coverage
+tests/coverage
+
+# yarn
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+# changelog
+/.changelog
+
+# archive
+.7z
+.tar.*

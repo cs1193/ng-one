@@ -23,6 +23,7 @@
     "url": "https://github.com/cs1193/ng-one/issues"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
     "chalk": "^4.0.0",
     "lodash": "^4.17.15",
     "log-symbols": "^4.0.0",
