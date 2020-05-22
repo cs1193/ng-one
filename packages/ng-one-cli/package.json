@@ -12,6 +12,9 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "ng-one": "./bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cs1193/ng-one.git"
