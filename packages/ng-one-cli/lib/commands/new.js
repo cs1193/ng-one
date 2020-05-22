@@ -12,15 +12,16 @@ const main = async args => {
   try {
     const { name, module } = args;
 
-    if (!isValidPackageName()) {
+    if (!isValidPackageName(name)) {
       console.error(`\n${chalk.red(logSymbols.error)} Invalid package name.\n`);
       return;
     }
 
-    if (isDirectoryExists()) {
+    if (isDirectoryExists(name)) {
       console.error(`\n${chalk.red(logSymbols.error)} A directory named ${name} exists. Please provide a different name.\n`);
       return;
     }
+
   } catch(e) {
     console.error(`\n${chalk.red(logSymbols.error)} Unable to create a ${chalk.bold('ng-one')} app / module, failed due to ${e}\n`)
   }

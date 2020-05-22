@@ -1,3 +1,5 @@
+const path = require('path');
+
 const chalk = require('chalk');
 const logSymbols = require('log-symbols');
 
@@ -8,6 +10,8 @@ const {
 
 const main = async args => {
   try {
+    const { module } = args;
+    const name = path.basename(process.cwd());
 
     if (isNgOneWorkspaceFilePresent()) {
       console.error(`\n${chalk.red(logSymbols.error)} This is already an ${chalk.bold('ng-one')} app. You can't init an another app in an ${chalk.bold('ng-one')} app.\n`)
@@ -18,7 +22,11 @@ const main = async args => {
       return;
     }
 
-    // package name check
+    if (!isValidPackageName(name)) {
+      console.error(`\n${chalk.red(logSymbols.error)} Invalid package name.\n`);
+      return;
+    }
+
 
   } catch(e) {
     console.error(`\n${chalk.red(logSymbols.error)} Unable to init a ${chalk.bold('ng-one')} app / module, failed due to ${e}\n`)
