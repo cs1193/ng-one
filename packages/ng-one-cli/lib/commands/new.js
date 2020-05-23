@@ -13,7 +13,7 @@ const main = async args => {
     const { name, module } = args;
 
     if (!isValidPackageName(name)) {
-      console.error(`\n${chalk.red(logSymbols.error)} Invalid package name.\n`);
+      console.error(`\n${chalk.red(logSymbols.error)} Invalid package name, suggested name ${getSuggestedPackageName()}.\n`);
       return;
     }
 

@@ -5,6 +5,7 @@ const logSymbols = require('log-symbols');
 
 const {
   isWorkingDirClean,
+  getSuggestedPackageName,
   isNgOneWorkspaceFilePresent
 } = require('../core/create-ng-one-app');
 
@@ -23,10 +24,11 @@ const main = async args => {
     }
 
     if (!isValidPackageName(name)) {
-      console.error(`\n${chalk.red(logSymbols.error)} Invalid package name.\n`);
+      console.error(`\n${chalk.red(logSymbols.error)} Invalid package name, suggested name ${getSuggestedPackageName()}.\n`);
       return;
     }
 
+    console.log('valid');
 
   } catch(e) {
     console.error(`\n${chalk.red(logSymbols.error)} Unable to init a ${chalk.bold('ng-one')} app / module, failed due to ${e}\n`)
