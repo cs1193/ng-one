@@ -1,14 +1,17 @@
 {
-  "name": "@cs1193/ng-one",
+  "name": "ng-one",
+  "author": "Chandresh Rajkumar Manonmani <cs1193@gmail.com>",
   "private": true,
   "preferGlobal": false,
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "lerna": "^3.20.2",
     "lerna-changelog": "^1.0.1",
-    "lerna-dependency-graph": "^1.0.2"
+    "lerna-dependency-graph": "^1.0.2",
+    "typescript": "^4.5.5"
   },
   "license": "MIT"
 }
